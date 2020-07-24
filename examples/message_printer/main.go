@@ -21,7 +21,7 @@ func fakeMain() int {
 
 	// Load inputs
 	var mode = flag.String("m", "pcap", "The sniffer source mode")
-	var inet = flag.String("i", "en0", "The network interface to capture from")
+	var inet = flag.String("i", "\\Device\\NPF_{D767704F-EED4-4830-ABC6-EBC368D020C5}", "The network interface to capture from")
 	var file = flag.String("f", "", "The file path to capture from")
 
 	flag.Parse()
